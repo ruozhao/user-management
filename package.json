@@ -1,0 +1,21 @@
+{
+  "name": "user-management",
+  "version": "1.0.0",
+  "description": "This is for es6 test and node study instance",
+  "main": "userServer.js",
+  "scripts": {
+    "start": "babel-node ./src/userServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ruo zhao",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "express": "^4.16.4",
+    "node-es6": "^0.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
