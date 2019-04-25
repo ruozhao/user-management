@@ -5,14 +5,19 @@ import fs from "fs";
 var app = express();
 
 app.get("/users", function(req, res) {
-    console.log("req is : ++++ " + req);
+    
     fs.readFile(__dirname + "/defaultData/" + "userList.json", "utf-8", function(err, data) {
         data = JSON.parse(data);
-        data.user4 = {
-            "name": "Shan zhen lin"
-        };
-        console.log(data);
-        res.end(JSON.stringify(data));
+        var dateSeconds = new Date();
+        var second = 0;
+        setInterval(function(intervalSecond, dateSeconds) {
+            console.log(dateSeconds.getSeconds() + intervalSecond + second);
+            second++;
+        }, 1000, 1, dateSeconds);
+        console.log(dateSeconds.getSeconds());
+
+        res.send(JSON.stringify(data));
+        res.end();
     });
 });
 

@@ -2,16 +2,12 @@
 
 ## How to use
 1. clone the repo
-'''
-git clone
-'''
+`git clone`
 
 2. install the dependences
-'''
-npm install
-'''
+`npm install`
 
 3. test
-'''
-npm run start
-'''
+`npm run start`
+Then you can open your browser to review the info
+
